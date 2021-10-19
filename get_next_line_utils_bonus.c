@@ -6,11 +6,11 @@
 /*   By: mframbou <mframbou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 12:56:57 by mframbou          #+#    #+#             */
-/*   Updated: 2021/10/19 13:57:23 by mframbou         ###   ########.fr       */
+/*   Updated: 2021/10/19 15:33:03 by mframbou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 // Concatenate 2 strings and puts the result in a new string
 // Then frees the original string (if it's null, it doesn't do it, source: man)

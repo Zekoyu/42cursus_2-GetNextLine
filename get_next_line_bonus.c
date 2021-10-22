@@ -6,7 +6,7 @@
 /*   By: mframbou <mframbou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 10:19:48 by mframbou          #+#    #+#             */
-/*   Updated: 2021/10/19 15:37:16 by mframbou         ###   ########.fr       */
+/*   Updated: 2021/10/22 15:13:24 by mframbou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@
 char	*get_next_line(int fd)
 {
 	char		*result;
-	static char	buffer[50][BUFFER_SIZE];
+	static char	buffer[255][BUFFER_SIZE];
 	int			head_pos;
 	int			i;
 
 	head_pos = 1;
-	if (fd < 0 || fd > 49)
+	if (fd < 0 || fd > 254)
 		return (NULL);
 	result = ft_strdup(buffer[fd]);
 	while (head_pos > 0 && !has_newline(result))
